@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class FlashCards extends AppCompatActivity {
     CardView question_one ;
@@ -18,7 +19,24 @@ public class FlashCards extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash_cards);
-        findViews();
+
+        RecyclerView list = findViewById(R.id.recycle_views_cards);
+
+        Project[] projects = {
+
+                new Project("Getting Started app","my project description",R.drawable.security,R.id.question_one),
+                new Project("Bmi Calculator","my project description",R.drawable.servers,R.id.question_two),
+                new Project("Inches converter","my project description",R.drawable.coding,R.id.question_three),
+                new Project("Name getter app","my project description",R.drawable.migration,R.id.question_four),
+                new Project("Developer Restaurant","my project description",R.drawable.ai,R.id.question_five)
+        };
+        ProjectsAdapter projectAdapter = new ProjectsAdapter(projects);
+
+        list.setAdapter(projectAdapter);
+
+        findviews();
+
+
         question_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,15 +92,15 @@ public class FlashCards extends AppCompatActivity {
                 startActivity(answersActivityIntent);
             }
         });
+
     }
 
-    private void findViews() {
-        question_one = findViewById(R.id.card_view_question1);
-        question_two = findViewById(R.id.card_view_question2);
-        question_three = findViewById(R.id.card_view_question3);
-        question_four = findViewById(R.id.card_view_question4);
-        question_five = findViewById(R.id.card_view_question5);
-
+    private void findviews() {
+        question_one = findViewById(R.id.question_one);
+        question_two = findViewById(R.id.question_two);
+        question_three = findViewById(R.id.question_three);
+        question_four = findViewById(R.id.question_four);
+        question_five = findViewById(R.id.question_five);
     }
 
 
