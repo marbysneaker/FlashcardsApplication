@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item
+        type="id"
+        name="question_one"
+        />
+    <item
+        type="id"
+        name="question_two"
+        />
+    <item
+        type="id"
+        name="question_three"
+        />
+    <item
+        type="id"
+        name="question_four"
+        />
+    <item
+        type="id"
+        name="question_five"
+        />
+</resources>

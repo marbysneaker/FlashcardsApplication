@@ -1,92 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView android:layout_height="match_parent"
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <LinearLayout android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:id="@+id/recycle_views_cards"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:id="@+id/card_view_question1"
-            android:layout_marginTop="60dp"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="3 + 4"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:background="@color/teal_200"/>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:id="@+id/card_view_question2"
-            android:layout_marginTop="60dp"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="5 + 1"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:background="@color/teal_200"/>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:id="@+id/card_view_question3"
-            android:layout_marginTop="60dp"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="7 + 2"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:background="@color/teal_200"/>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:id="@+id/card_view_question4"
-            android:layout_marginTop="60dp"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="1 + 2"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:background="@color/teal_200"/>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:id="@+id/card_view_question5"
-            android:layout_marginTop="60dp"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="8 + 2"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:background="@color/teal_200"/>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
 
 
-</ScrollView>
+    <!--<ScrollView android:layout_height="match_parent"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--    <LinearLayout android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:orientation="vertical">-->
+
+
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:id="@+id/card_view_question1"-->
+    <!--            android:layout_marginTop="60dp"-->
+    <!--            >-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:text="3 + 4"-->
+    <!--                android:textSize="50sp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:background="@color/teal_200"/>-->
+    <!--        </androidx.cardview.widget.CardView>-->
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:id="@+id/card_view_question2"-->
+    <!--            android:layout_marginTop="60dp"-->
+    <!--            >-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:text="5 + 1"-->
+    <!--                android:textSize="50sp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:background="@color/teal_200"/>-->
+    <!--        </androidx.cardview.widget.CardView>-->
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:id="@+id/card_view_question3"-->
+    <!--            android:layout_marginTop="60dp"-->
+    <!--            >-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:text="7 + 2"-->
+    <!--                android:textSize="50sp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:background="@color/teal_200"/>-->
+    <!--        </androidx.cardview.widget.CardView>-->
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:id="@+id/card_view_question4"-->
+    <!--            android:layout_marginTop="60dp"-->
+    <!--            >-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:text="1 + 2"-->
+    <!--                android:textSize="50sp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:background="@color/teal_200"/>-->
+    <!--        </androidx.cardview.widget.CardView>-->
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:id="@+id/card_view_question5"-->
+    <!--            android:layout_marginTop="60dp"-->
+    <!--            >-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:text="8 + 2"-->
+    <!--                android:textSize="50sp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:background="@color/teal_200"/>-->
+    <!--        </androidx.cardview.widget.CardView>-->
+    <!--    </LinearLayout>-->
+
+
+    <!--</ScrollView>-->
