@@ -34,60 +34,6 @@ public class FlashCards extends AppCompatActivity implements SelectListener{
 
         list.setAdapter(projectAdapter);
 
-
-
-
-
-
-
-
-//        question_two.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent answersActivityIntent = new Intent(FlashCards.this, AnswerActivity.class );
-//                Bundle bundle = new Bundle();
-//                String answer = "6";
-//                bundle.putString("answer",answer);
-//                answersActivityIntent.putExtras(bundle);
-//                startActivity(answersActivityIntent);
-//            }
-//        });
-//        question_three.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent answersActivityIntent = new Intent(FlashCards.this, AnswerActivity.class );
-//                Bundle bundle = new Bundle();
-//                String answer = "9";
-//                bundle.putString("answer",answer);
-//                answersActivityIntent.putExtras(bundle);
-//                startActivity(answersActivityIntent);
-//            }
-//        });
-//        question_four.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent answersActivityIntent = new Intent(FlashCards.this, AnswerActivity.class );
-//                Bundle bundle = new Bundle();
-//                String answer = "3";
-//                bundle.putString("answer",answer);
-//                answersActivityIntent.putExtras(bundle);
-//                startActivity(answersActivityIntent);
-//            }
-//        });
-//        question_five.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent answersActivityIntent = new Intent(FlashCards.this, AnswerActivity.class );
-//                Bundle bundle = new Bundle();
-//                String answer = "10";
-//                bundle.putString("answer",answer);
-//                answersActivityIntent.putExtras(bundle);
-//                startActivity(answersActivityIntent);
-//            }
-//        });
-//
-
-
     }
 
 

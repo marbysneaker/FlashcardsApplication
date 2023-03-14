@@ -21,7 +21,6 @@ public class AnswerActivity extends AppCompatActivity {
         TextView textAnswer = findViewById(R.id.textview_answer);
         textAnswer.setText(answer);
 
-
     }
 
 

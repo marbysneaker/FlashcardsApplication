@@ -5,7 +5,6 @@ public class Project {
     String projectName;
     String description;
     int image;
-
     int id;
 
 
