@@ -20,4 +20,10 @@
         type="id"
         name="question_five"
         />
+    <item
+        type="id"
+        name="recycle_views_cards"/>
+    <item
+        type="id"
+        name="text_view_topic"/>
 </resources>

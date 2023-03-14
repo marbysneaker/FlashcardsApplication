@@ -15,6 +15,9 @@ public class AnswerActivity extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         String answer = bundle.getString("answer");
+        String topic  = bundle.getString("topic");
+        TextView textTopic = findViewById(R.id.text_view_topic);
+        textTopic.setText(topic);
         TextView textAnswer = findViewById(R.id.textview_answer);
         textAnswer.setText(answer);
 
